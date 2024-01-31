@@ -14,3 +14,5 @@ class StackItem(Item):
     city = Field()
     state = Field()
     zip_code = Field()
+    latitude = Field()
+    longitude = Field() 
