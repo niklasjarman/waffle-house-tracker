@@ -1,29 +1,79 @@
-.App {
-  position: relative;
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
-.menu-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 24px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
-  z-index: 1000; 
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: -250px;
-  width: 250px;
+  right: -300px;
   height: 100%;
+  width: 300px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: right 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
+  transition: right 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.menu h2 {
+  padding: 20px;
+  margin: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.menu div {
+  padding: 20px;
+}
+
+.menu label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.menu select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background-color: #555;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu .waffle-house-list-overlay {
+  display: none;
   padding: 20px;
 }
 
@@ -31,62 +81,52 @@
   right: 0;
 }
 
-.menu h2 {
-  color: #333;
+.menu-open .waffle-house-list-overlay {
+  display: block;
 }
 
-.menu p {
-  margin: 10px 0;
-  cursor: pointer;
+
+.waffle-house-list,
+.waffle-house-list-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000; /* Ensure the list is above the map */
+  display: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.waffle-house-list-overlay {
+  display: block;
+}
+
+.waffle-house-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.waffle-house-list li {
+  margin-bottom: 10px;
 }
 
 .checkbox-label {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-top: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  user-select: none;
+  display: flex;
+  align-items: center;
 }
 
 .checkbox-label input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+  margin-right: 10px;
 }
 
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.checkbox-label input:checked + .checkmark {
-  background-color: #2196f3;
-}
-
-.checkmark:after {
-  content: '';
-  position: absolute;
-  display: none;
-}
-
-.checkbox-label input:checked + .checkmark:after {
-  display: block;
-}
-
-.checkbox-label .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
+.MapContainer {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1; /* Ensure the map is below the overlay and menu */
 }
