@@ -4,7 +4,7 @@ Welcome to the Waffle House Tracker! This repository contains both the scraper u
 
 ## About
 
-The Waffle House Tracker is a solo project that scrapes Waffle House locations and allows you to visualize and track them on a map. The project consists of two main components:
+The Waffle House Tracker is my solo project that scrapes Waffle House locations and allows you to visualize and track them on a map. The project consists of two main components:
 
 - **Scraper:** The scraper collects Waffle House locations from a reliable source (mention the source) and exports the data to a JSON file.
 
