@@ -15,8 +15,7 @@ The Waffle House Tracker is a solo project that scrapes Waffle House locations a
 - View Waffle House locations on an interactive map.
 - Filter Waffle Houses by state.
 - Mark visited Waffle House locations.
-- Responsive design for a seamless experience on various devices.
-
+  
 ## Getting Started
 
 ### Prerequisites
