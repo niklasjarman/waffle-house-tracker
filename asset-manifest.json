@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/waffle-house-tracker/static/css/main.3dafee19.css",
+    "main.js": "/waffle-house-tracker/static/js/main.ed2bcfa7.js",
+    "static/js/787.eab2c7e5.chunk.js": "/waffle-house-tracker/static/js/787.eab2c7e5.chunk.js",
+    "index.html": "/waffle-house-tracker/index.html",
+    "main.3dafee19.css.map": "/waffle-house-tracker/static/css/main.3dafee19.css.map",
+    "main.ed2bcfa7.js.map": "/waffle-house-tracker/static/js/main.ed2bcfa7.js.map",
+    "787.eab2c7e5.chunk.js.map": "/waffle-house-tracker/static/js/787.eab2c7e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3dafee19.css",
+    "static/js/main.ed2bcfa7.js"
+  ]
+}
