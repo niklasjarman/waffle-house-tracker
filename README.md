@@ -6,7 +6,7 @@ Welcome to the Waffle House Tracker! This repository contains both the scraper u
 
 The Waffle House Tracker is my solo project that scrapes Waffle House locations and allows you to visualize and track them on a map. The project consists of two main components:
 
-- **Scraper:** The scraper collects Waffle House locations from a reliable source (mention the source) and exports the data to a JSON file.
+- **Scraper:** The scraper collects Waffle House locations from locations.wafflehouse.com and exports the data to a JSON file.
 
 - **React Application:** The React application uses Leaflet for mapping and allows you to interact with Waffle House locations. You can mark visited locations and filter Waffle Houses based on the selected state.
 
